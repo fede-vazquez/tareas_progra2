@@ -37,7 +37,7 @@ namespace ShoppingCine.Modelos
         {
             Console.WriteLine($"Pelicula: {Pelicula.Nombre}, Sala: {Sala.Numero}");
             Console.WriteLine($"Formato: {Pelicula.Formato}");
-            Console.WriteLine($"Fecha: {Fecha}, Horario: {Horario}");
+            Console.WriteLine($"Fecha: {Fecha.ToShortDateString()}, Horario: {Horario}");
         }
         public void DefinirHorario(TimeOnly hora) => Horario = hora;
         public void ReproducirPelicula() => Pelicula.Reproducir();
